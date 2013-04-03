@@ -12,4 +12,31 @@
     <module>wars</module>
     <module>ears</module>
   </modules>
+  <properties>
+    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <cobertura.maxmem>512m</cobertura.maxmem>
+    <!-- <github.global.server>github</github.global.server> -->
+    <commons-lang3.version>3.1</commons-lang3.version>
+    <!-- <commons-codec.version>1.6</commons-codec.version> -->
+    <!-- <ehcache-jcache.version>1.5.0-0.5</ehcache-jcache.version> -->
+    <junit.version>4.11</junit.version>
+    <dbunit.version>2.4.9</dbunit.version>
+    <logback-classic.version>1.0.9</logback-classic.version>
+    <slf4j-api.version>1.7.2</slf4j-api.version>
+    <commons-lang3.version>3.1</commons-lang3.version>
+    <commons-codec.version>1.7</commons-codec.version>
+    <eclipselink.version>2.4.0</eclipselink.version>
+    <jeeunit.version>1.0.0</jeeunit.version>
+    <glassfish-embedded-all.version>3.1.2.2</glassfish-embedded-all.version>
+    <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+    <javaee-api.version>6.0</javaee-api.version>
+    <javaee-web-api.version>6.0</javaee-web-api.version>
+    <kuzumeji-fw.version>0.2.0-SNAPSHOT</kuzumeji-fw.version>
+    <kuzumeji-reference.version>0.2.0-SNAPSHOT</kuzumeji-reference.version>
+    <commons-beanutils.version>1.8.3</commons-beanutils.version>
+  </properties>
 </project>
