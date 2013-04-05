@@ -5,12 +5,18 @@
 // ========================================================================
 package kamuy.domain.actor;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Version;
 import kamuy.AbstractReferenceObject;
 /**
  * Member.
  * @author nilcy
  */
 @Entity
+@NamedQueries({
+    @NamedQuery(name = "findMember", query = "SELECT m FROM Member m"),
+    @NamedQuery(name = "findMemberByAccount", query = "SELECT m FROM Member m WHERE m.account = :account") })
 public class Member extends AbstractReferenceObject<Member> {
     /** S/N. */
     private static final long serialVersionUID = -380304895857169591L;
@@ -18,6 +24,9 @@ public class Member extends AbstractReferenceObject<Member> {
     private String account;
     /** Password. */
     private String password;
+    /** Version. */
+    @Version
+    private Long version;
     /** Constructor. */
     public Member() {
         super();
@@ -49,5 +58,19 @@ public class Member extends AbstractReferenceObject<Member> {
      */
     public void setPassword(final String aPassword) {
         this.password = aPassword;
+    }
+    /**
+     * Get {@link #version}.
+     * @return {@link #version}
+     */
+    public Long getVersion() {
+        return this.version;
+    }
+    /**
+     * Set {@link #version}.
+     * @param aVersion {@link #version}
+     */
+    public void setVersion(final Long aVersion) {
+        this.version = aVersion;
     }
 }

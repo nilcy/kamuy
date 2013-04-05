@@ -33,7 +33,7 @@ public class ReferenceObjectListener {
         if (aEntity instanceof ReferenceObject) {
             final ReferenceObject<?> referenceObject = (ReferenceObject<?>) aEntity;
             setPersistedOn(referenceObject);
-            this.log.info("POST-SAVED! -> " + referenceObject);
+            // this.log.info("POST-SAVED! -> " + referenceObject);
         }
     }
     /**
@@ -46,7 +46,7 @@ public class ReferenceObjectListener {
         if (aEntity instanceof ReferenceObject) {
             final ReferenceObject<?> referenceObject = (ReferenceObject<?>) aEntity;
             setPersistedOn(referenceObject);
-            this.log.info("POST-LOADED! -> " + referenceObject);
+            // this.log.info("POST-LOADED! -> " + referenceObject);
         }
     }
     /**
@@ -58,7 +58,7 @@ public class ReferenceObjectListener {
         if (aEntity instanceof ReferenceObject) {
             final ReferenceObject<?> referenceObject = (ReferenceObject<?>) aEntity;
             setPersistedOn(referenceObject);
-            this.log.info("POST-REMOVED! -> " + referenceObject);
+            // this.log.info("POST-REMOVED! -> " + referenceObject);
         }
     }
     /**
