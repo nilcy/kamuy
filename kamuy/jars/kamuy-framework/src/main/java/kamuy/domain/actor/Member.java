@@ -4,6 +4,7 @@
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
 package kamuy.domain.actor;
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -14,6 +15,7 @@ import kamuy.AbstractReferenceObject;
  * @author nilcy
  */
 @Entity
+@Cacheable(true)
 @NamedQueries({
     @NamedQuery(name = "findMember", query = "SELECT m FROM Member m"),
     @NamedQuery(name = "findMemberByAccount", query = "SELECT m FROM Member m WHERE m.account = :account") })
