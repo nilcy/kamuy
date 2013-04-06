@@ -10,4 +10,7 @@
     <artifactId>kamuy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  <modules>
+    <module>kamuy-presentation</module>
+  </modules>
 </project>
