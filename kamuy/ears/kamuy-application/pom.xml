@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -11,14 +12,17 @@
       <groupId>com.github.nilcy</groupId>
       <artifactId>kamuy-framework</artifactId>
       <version>0.0.1-SNAPSHOT</version>
+      <type>ejb</type>
     </dependency>
     <dependency>
       <groupId>com.github.nilcy</groupId>
       <artifactId>kamuy-presentation</artifactId>
       <version>0.0.1-SNAPSHOT</version>
+      <type>war</type>
     </dependency>
   </dependencies>
   <build>
+    <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -31,12 +35,10 @@
             <webModule>
               <groupId>com.github.nilcy</groupId>
               <artifactId>kamuy-presentation</artifactId>
-              <bundleFileName>kamuy-presentation.war</bundleFileName>
             </webModule>
             <ejbModule>
               <groupId>com.github.nilcy</groupId>
               <artifactId>kamuy-framework</artifactId>
-              <bundleFileName>kamuy-framework.jar</bundleFileName>
             </ejbModule>
           </modules>
           <archive>
