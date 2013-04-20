@@ -14,19 +14,9 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  * @author nilcy
  */
 public abstract class AbstractDataObject<T extends AbstractDataObject<T>> implements DataObject<T> {
-    /** keyword. */
-    private String keyword;
     /** Constructor. */
     public AbstractDataObject() {
         super();
-    }
-    @Override
-    public String getKeyword() {
-        return this.keyword;
-    }
-    @Override
-    public void setKeyword(final String aKeyword) {
-        this.keyword = aKeyword;
     }
     /**
      * See {@link EqualsBuilder#reflectionEquals(Object, Object, boolean)}.
